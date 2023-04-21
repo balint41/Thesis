@@ -14,7 +14,7 @@ My master's thesis is focusing on the gamma imbalance of the option market maker
 
 5. Horvath_MThesis.pdf - The draft version of the thesis in Hungarian.
 
-+. gamma_illustration.py - The illustration of gamma dynamics, for the theoretical part of the thesis. The script is based on Evangelos Malmpanzi (https://sigmaquant.wordpress.com). 
++. gamma_illustration.py - The illustration of gamma dynamics, for the theoretical part of the thesis. The script is based on Evangelos Malmpanzi. 
 
 ## Acknowledgements
 Special thanks to Péter Gönczi and Áron Polgár for helping me all the way along the technical side. 
