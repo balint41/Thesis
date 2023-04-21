@@ -1,4 +1,4 @@
-# Master thesis data project
+# Master's thesis data project
 
 ## Project overview
 My master's thesis is focusing on the gamma imbalance of the option market makers' and its effect on the underlying market volatility in the option markets of Europe. 
