@@ -8,7 +8,7 @@ My master's thesis is focusing on the gamma imbalance of the option market maker
 
 2. sasdata_read_in.py - The decompressed file is sas7bdat. This extension is not supported by the most common parallel computing packages, therefore alternative data processing was necessary. This script is running through the data in chunks, selecting the relevant tickers via the key 'SecurityID' and saving the chunks in .parquet, which is a much more managable format. The provided data sample (data_sample.parquet) is one of the hundreds of the output files of the script after running.
 
-3. raw_to_GEX.py - Data processing. Combines the small pq. files into one dataset. Transforming the SAS date format into readable, assigning ticker names to security ID, aggregating gamma exposure (based on SqueezeMetrics and Sergei Perfiliev) across the option chain and grouping by date and ticker. As result we get the aggregation of the entire option chain: on one trading day, for one underlying equity index the aggregated gamma exposure. 
+3. raw_to_gex.py - Data processing. Combines the small pq. files into one dataset. Transforming the SAS date format into readable, assigning ticker names to security ID, aggregating gamma exposure (based on SqueezeMetrics and Sergei Perfiliev) across the option chain and grouping by date and ticker. As result we get the aggregation of the entire option chain: on one trading day, for one underlying equity index the aggregated gamma exposure. 
 
 4. regression.py - Time series regression analysis based on Békés - Kézdi: Data Analysis for Business, Economics, chapter 12. 
 
