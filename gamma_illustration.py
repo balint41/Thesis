@@ -48,14 +48,12 @@ g = g.reshape(len(S), len(T))
 
 X, Y = np.meshgrid(S, T)
 
-# Set Seaborn color palette
 sns.set_palette("magma")
 
-# Create a wider 3D plot with Seaborn
-fig = plt.figure(figsize=(14,14)) # Increased width to 12 inches
+fig = plt.figure(figsize=(14,14))
 ax = fig.add_subplot(111, projection='3d')
-surf = ax.plot_surface(Y, X, g, rstride=1, cstride=1, cmap='crest', shade=0.5) # Increased shading to 0.5
-ax.set_title('Call Gamma', size=24)
+surf = ax.plot_surface(Y, X, g, rstride=1, cstride=1, cmap='crest', shade=0.5)
+ax.set_title('Gamma alakulása a lejárat és a moneyness függvényében', size=24)
 ax.set_xlabel('Lejárat', size=20)
 ax.set_ylabel('Részvény árfolyam', size=20)
 ax.set_zlabel('Gamma', size=20)
