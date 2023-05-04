@@ -12,9 +12,7 @@ import numpy as np
 import pandas as pd
 from typing import List
 import os
-#import threading
 import pyarrow
-#from concurrent.futures import ProcessPoolExecutor
 
 #working directory
 #os.chdir('/Volumes/T7/OPTION_PRICE')
@@ -38,12 +36,12 @@ if __name__ == '__main__':
         df_columns = df[df['SecurityID'].isin([501271.0, 506496.0, 508037.0, 506522.0, 510399.0, 506528.0, 506552.0, 707745.0])]
         r = np.random.randint(0, 1000000000)
         df_columns.to_parquet(f"{sasfile.replace('.sas7bdat', '')}_{r}.parquet", engine='pyarrow')
-#    pq_files = glob.glob(f"{sasfile.replace('.sas7bdat', '')}*.parquet")
-#    df_columns = read_parquet_files(pq_files)
-#    df_columns.to_parquet(sasfile.replace("sas7bdat", "parquet"))
+    pq_files = glob.glob(f"{sasfile.replace('.sas7bdat', '')}*.parquet")
+    df_columns = read_parquet_files(pq_files)
+    df_columns.to_parquet(sasfile.replace("sas7bdat", "parquet"))
      
-#    for f in pq_files:
-#        os.remove(f)
+    for f in pq_files:
+        os.remove(f)
         
 
 
