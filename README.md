@@ -16,3 +16,5 @@ demonstration.ipynb - Jupyter Notebook for demonstration purposes. More readable
 
 5. Horvath_MThesis.pdf - The draft version of the thesis in Hungarian.
 
+## Acknowledgements
+Special thanks to Péter Gönczi and Áron Polgár who helped me with the technical implementation. 
