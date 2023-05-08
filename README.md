@@ -11,6 +11,7 @@ My master's thesis is focusing on the gamma imbalance of the option market maker
 3. raw_to_gex.py - Data processing. Combines the small pq. files into one dataset. Transforming the SAS date format into readable, assigning ticker names to security ID, aggregating gamma exposure (based on SqueezeMetrics and Sergei Perfiliev) across the option chain and grouping by date and ticker. As result we get the aggregation of the entire option chain: on one trading day, for one underlying equity index the aggregated gamma exposure. 
 
 4. regression.py - Data preparation, exploration + Time series regression analysis
+
 demonstration.ipynb - Jupyter Notebook for demonstration purposes. More readable than the .py regression analysis. Containing only DAX, the other indices are in the .py file. 
 
 5. Horvath_MThesis.pdf - The draft version of the thesis in Hungarian.
