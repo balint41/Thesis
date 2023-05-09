@@ -12,7 +12,7 @@ My master's thesis is focusing on the gamma imbalance of the option market maker
 
 4. regression.py - Data preparation, exploration + Time series regression analysis
 
-demonstration.ipynb - Jupyter Notebook for demonstration purposes. More readable than the .py regression analysis. Containing only DAX, the other indices are in the .py file. 
+   demonstration.ipynb - Jupyter Notebook for demonstration purposes. More readable than the .py regression analysis. Containing only DAX, the other indices are in the .py file. 
 
 5. Horvath_MThesis.pdf - The draft version of the thesis in Hungarian.
 
